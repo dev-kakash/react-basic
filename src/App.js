@@ -13,6 +13,7 @@ import ClassEventBind from './ClassEventBind';
 import ParentComponent from './ParentComponent';
 import Conditions from './Conditions';
 import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <ParentComponent/>
       <Conditions/>
       <NameList/>
+      <StyleSheet/>
     </div>
   );
 }
