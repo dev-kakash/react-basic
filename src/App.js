@@ -17,6 +17,7 @@ import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import StyleModule from './components/StyleModule';
 import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       <Inline/>
       <StyleModule/>
       <Form/>
+      <LifeCycleA/>
     </div>
   );
 }
