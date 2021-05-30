@@ -14,6 +14,8 @@ import ParentComponent from './ParentComponent';
 import Conditions from './Conditions';
 import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import StyleModule from './components/StyleModule';
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
       <ParentComponent/>
       <Conditions/>
       <NameList/>
-      <StyleSheet/>
+      <StyleSheet wrapper={true}/>
+      <Inline/>
+      <StyleModule/>
     </div>
   );
 }
