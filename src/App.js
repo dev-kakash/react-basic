@@ -16,6 +16,7 @@ import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
 import Inline from './components/Inline';
 import StyleModule from './components/StyleModule';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <StyleSheet wrapper={true}/>
       <Inline/>
       <StyleModule/>
+      <Form/>
     </div>
   );
 }
