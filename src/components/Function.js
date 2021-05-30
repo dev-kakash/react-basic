@@ -4,6 +4,6 @@ import React from 'react'
 //    return <h1>Hello World</h1>
 //}
 
-const Function =() => <p>This is from Function Component</p>
+const Function =() => <p>This is from Function Component.I am Akash</p>
 
 export default Function
