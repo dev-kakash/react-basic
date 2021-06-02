@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LifeCycleB from '../LifeCycleB'
+import LifeCycleB from './LifeCycleB'
 
 export class LifeCycleA extends Component {
     constructor(props) {
@@ -19,11 +19,30 @@ export class LifeCycleA extends Component {
     componentDidMount(){
         console.log('LifeCycleA componentDidMount')
     }
+
+    shouldComponentUpdate(){
+        console.log('LifeCycleA shouldComponentUpdate')
+        return true
+    } 
+    getSnapshotBeforeUpdate(prevProps,prevStare){
+        console.log('LifeCycleA  getSnapshotBeforeUpdate')
+        return null
+    } 
+    
+    componentDidUpdate(){
+        console.log('LifeCycleA  gcomponentDidUpdate')
+    }
+    changeState = () =>{
+        this.setState({
+            name:'batash'
+        })
+    }
     render() {
         console.log('LifeCycleA  render')
         return (
             <div>
                LifeCycleA <br/>
+               <button onClick={this.changeState}>Change State</button>
                <LifeCycleB/>
             </div>
         )
