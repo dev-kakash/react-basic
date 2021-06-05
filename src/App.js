@@ -18,11 +18,13 @@ import Inline from './components/Inline';
 import StyleModule from './components/StyleModule';
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 function App() {
   return (
     <div className="App">
-      <Function/>
+      {/* <Function/>
       <Class/>
       <PropsExample name='Akash' age = '22'/>
       <PropsExample name='Sagar' age = '14'><small Style="color:red">I have Children Element</small></PropsExample>
@@ -42,6 +44,9 @@ function App() {
       <StyleModule/>
       <Form/>
       <LifeCycleA/>
+      <FragmentDemo/> */}
+      <Table/>
+
     </div>
   );
 }
