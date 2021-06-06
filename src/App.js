@@ -20,6 +20,7 @@ import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import Parent from './components/Parent';
 
 function App() {
   return (
@@ -44,8 +45,9 @@ function App() {
       <StyleModule/>
       <Form/>
       <LifeCycleA/>
-      <FragmentDemo/> */}
-      <Table/>
+      <FragmentDemo/>
+      <Table/> */}
+      <Parent/>
 
     </div>
   );
