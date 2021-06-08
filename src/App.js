@@ -24,6 +24,7 @@ import Parent from "./components/Parent";
 import RefDemo from "./components/RefDemo";
 import RefWithClassComp from "./components/RefWithClassComp";
 import FoucsInput from "./components/FoucsInput";
+import FRParent from "./components/FRParent";
 
 function App() {
   return (
@@ -53,8 +54,9 @@ function App() {
       <FragmentDemo />
       <Table />
       <Parent />
-      <RefDemo /> */}
-      <FoucsInput />
+      <RefDemo /> 
+      <FoucsInput />*/}
+      <FRParent />
     </div>
   );
 }
