@@ -25,6 +25,7 @@ import RefDemo from "./components/RefDemo";
 import RefWithClassComp from "./components/RefWithClassComp";
 import FoucsInput from "./components/FoucsInput";
 import FRParent from "./components/FRParent";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
@@ -55,8 +56,9 @@ function App() {
       <Table />
       <Parent />
       <RefDemo /> 
-      <FoucsInput />*/}
-      <FRParent />
+      <FoucsInput />
+      <FRParent />*/}
+      <PortalDemo />
     </div>
   );
 }
