@@ -26,6 +26,8 @@ import RefWithClassComp from "./components/RefWithClassComp";
 import FoucsInput from "./components/FoucsInput";
 import FRParent from "./components/FRParent";
 import PortalDemo from "./components/PortalDemo";
+import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorUi from "./components/ErrorUi";
 
 function App() {
   return (
@@ -57,8 +59,17 @@ function App() {
       <Parent />
       <RefDemo /> 
       <FoucsInput />
-      <FRParent />*/}
-      <PortalDemo />
+      <FRParent />
+      <PortalDemo /> */}
+      <ErrorUi>
+        <ErrorBoundary heroName="BatMan" />
+      </ErrorUi>
+      <ErrorUi>
+        <ErrorBoundary heroName="SuperMan" />
+      </ErrorUi>
+      <ErrorUi>
+        <ErrorBoundary heroName="Joker" />
+      </ErrorUi>
     </div>
   );
 }
