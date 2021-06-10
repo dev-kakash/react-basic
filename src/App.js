@@ -30,6 +30,10 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import ErrorUi from "./components/ErrorUi";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+import Click2 from "./components/Click2";
+import Hover2 from "./components/Hover2";
+import User from "./components/User";
+import BaseCount from "./BaseCount";
 
 function App() {
   return (
@@ -71,9 +75,22 @@ function App() {
       </ErrorUi>
       <ErrorUi>
         <ErrorBoundary heroName="Joker" />
-      </ErrorUi> */}
+      </ErrorUi> 
       <ClickCounter name="Akash" />
-      <HoverCounter />
+      <HoverCounter /> */}
+      {/* <Click2 />
+      <Hover2 />
+      <User render={(isLoggedIn) => (isLoggedIn ? "akash" : "Guest")} /> */}
+      <BaseCount
+        render={(count, incrementCount) => (
+          <Click2 count={count} incrementCount={incrementCount} />
+        )}
+      />
+      <BaseCount
+        render={(count, incrementCount) => (
+          <Hover2 count={count} incrementCount={incrementCount} />
+        )}
+      />
     </div>
   );
 }
